@@ -1,0 +1,46 @@
+
+/* buttons.css */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+.btn12 {
+    font-family: Koulen !important;
+    font-weight: 100 !important;
+    font-size: 18px !important;
+    color: #ffffff !important;
+    background-color: #5d7ee3 !important;
+    padding: 11px 50px !important;
+    border: 2px solid #5d7ee3 !important;
+    box-shadow: rgb(255, 255, 255) 28px 5px 25px 5px !important;
+    border-radius: 6px !important;
+    transition: 500ms !important;
+    transform: translateY(0) !important;
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    align-items: center !important;
+    justify-content: center !important; /* Ajout pour centrer horizontalement */
+    cursor: pointer !important;
+    text-transform: lowercase !important;
+    padding-left: 10px !important; /* Ajout d'un espace de 10px à gauche */
+    margin-bottom: 20px;
+width: 300px;
+}
+
+.btn12:hover {
+    transition: 500ms !important;
+    padding: 10px 50px !important;
+    transform: translateY(-0px) !important;
+    background-color: #fff !important;
+    color: #5d7ee3 !important;
+    border: solid 2px #5d7ee3 !important;
+}
+
+/* buttons.css */
+.buttons-container12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajustez la hauteur selon vos besoins */
+}
+
+

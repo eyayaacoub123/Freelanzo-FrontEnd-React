@@ -1,0 +1,199 @@
+/* About.css */
+
+.About {
+  --base-color: #86a1f0;
+  --base-color-foncé: #0A1D56;
+  --base-color-light: #f1e6e3;
+}
+/*
+.About *{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+}*/
+.About .spacer {
+  margin-top: 550px; /* Ajustez la valeur en fonction de l'espace que vous souhaitez */
+}
+
+.About .custom-navbar-color {
+  background-color: var(--base-color); /* Couleur de fond beige pour le navbar */
+}
+
+.About .section-title {
+  font-size: 2.5em;
+  color: var(--base-color-foncé); /* Couleur du texte vert */
+  font-family: 'Fira Code', monospace;
+    font-weight: 700;
+}
+
+.About body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.About .container {
+  max-width: 1200px;
+  margin: auto;
+ 
+}
+
+.About .leaders-container {
+  background-color: #e0e8ff;
+  max-width: 1000px;
+  max-height: 400px;
+  border-radius: 10px;
+  z-index: 999;
+  margin: auto;
+  display: flex; /* Change display property to flex */
+  justify-content: space-around; /* Adjust spacing between leaders */
+}
+
+.About section {
+  padding: 50px 0;
+  height: 78vh;
+  text-align: center;
+}
+
+.About h2 {
+  color: var(--base-color-foncé);
+}
+
+.About p {
+  line-height: 1.6;
+}
+
+.About #leadership .leader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.About #leadership img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+
+
+.About #philosophy h2 {
+ 
+  display: flex;
+}
+
+.About #phrases {
+  margin-top: 20px;
+}
+
+
+.About b, strong {
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+}
+.About #phrases .phrase {
+  background-color: var(--base-color);
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+.About #philosophy .phrase {
+  background-color: #e0e8ff;
+  padding: 40px;
+  margin-bottom: 20px;
+  font-size: large;
+}
+
+.About #about .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.About #about p {
+  align-items: center;
+}
+
+.About #work a {
+  align-items: center;
+  color: rgb(135, 135, 135);
+}
+
+.About .description-frame {
+  background-color: var(--base-color); /* Couleur de fond blanche */
+  padding: 50px;
+  border-radius: 10px; /* Bordure arrondie */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  width: 800px;
+  margin-left: -30px;
+}
+
+.About #phrases .phrase:hover {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+  transition: transform 0.3s ease; /* Adjust the transition duration and timing function as needed */
+}
+
+.About #bg-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.About #last_section,
+.About #home,
+.About #about,
+.About #contact {
+  color: #fff;
+  /* Add any additional styles you want for these buttons */
+}
+
+.About #copy {
+  font-weight: bold;
+  color: var(--base-color-foncé);
+}
+
+
+.About .Aboutusphoto{
+  margin-right: -800px;
+  margin-top: -300px;
+    width: 250px;
+}
+
+.down-arrow-container {
+  width: 150px; /* Adjust width and height as needed */
+  height: 150px;
+  position: relative;
+  margin-left: 50%;
+}
+
+.down-arrow {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent; /* Increase border-left and border-right */
+  border-right: 30px solid transparent; /* Increase border-left and border-right */
+  border-top: 45px solid var(--base-color-foncé); /* Increase border-top */
+  animation: bounce 1s infinite alternate; /* Apply the animation */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0); /* Start position */
+  }
+  100% {
+    transform: translateY(15px); /* End position */
+  }
+}
+
+.About .pointingphoto{
+  width: 200px;
+  border-radius: 0%;
+  margin-top: -100px;
+  margin-left: 1000px;
+}

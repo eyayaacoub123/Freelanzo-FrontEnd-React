@@ -1,0 +1,1368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --body-color :#fff;
+    --sidebar-color:#b7c9ff;
+    --primary-color: #0A1D56;
+    --primary-color-light:#e0e8ff;
+    --toggle-color:#0A1D56;
+    --text-color: #0A1D56;
+    --post :#fff;
+    --post-hover: #f0f0f0;
+    --orange : #ff9409;
+    --colorbleu : #7d94d6 ;
+    --activitycolor: #001b66;
+    
+
+/**/
+--base-color222: #ffffff;
+    --base-color222-foncé: #0A1D56;
+    --base-color222-light: #f1e6e3;
+/**/
+
+
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+
+}
+.acceuil dl,.acceuil ol,.acceuil ul {
+    position: relative;
+    left: -35px;
+}
+/* Ajoutez ces styles dans votre fichier menu.css */
+/* Ajoutez ces styles dans votre fichier menu.css */
+
+  
+  
+  
+/* Ajoutez ces styles dans votre fichier menu.css */
+/* Vos styles existants pour .search */
+/* Vos styles existants pour .search */
+/* Vos styles existants pour .search */
+/* Vos styles existants pour .search */
+.search {
+    margin-top: 9px;
+    display: flex;
+    align-items: center;
+  align-items: center;
+}
+
+.learn{
+    margin-right:400px;
+}
+.learn1{
+    margin-right:250px;
+}
+.acceuil #searchInput {
+    display: none; /* Initially hide the input */
+    width: 0;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-top: 9px !important;
+    position: absolute; /* Position the input absolutely */
+    top: 0; /* Align the input to the top of the search container */
+    left: 0; /* Align the input to the left of the search container */
+}
+
+/* Nouveau style pour l'input lorsqu'il est affiché */
+.acceuil #searchContainer.show-input #searchInput {
+    display: block;
+    width: 1290px; /* Ajustez la largeur initiale selon vos besoins */
+    margin-left: 30px; /* Ajustez la marge selon vos besoins */
+}
+
+/* Ajustez le style pour que l'icône et l'input soient côte à côte */
+.acceuil #searchIcon {
+    color: var(--base-color222-foncé);
+    cursor: pointer;
+    font-size: 20px; /* Ajustez la taille selon vos besoins */
+margin-right: 10px;
+}
+
+.acceuil .fullscreen-icon {
+    color: var(--base-color222-foncé);
+    cursor: pointer;
+    margin-right: 25px;
+    margin-top: 9px;
+}
+
+.acceuil #fullscreen .bx-fullscreen {
+    font-size: 20px; /* Remplacez 24px par la taille souhaitée */
+}
+
+.acceuil #notification .bx-bell {
+    font-size: 20px; /* Remplacez 24px par la taille souhaitée */
+}
+.acceuil .notification-icon {
+    color: var(--base-color222-foncé);
+    margin-right: 20px; /* Add some margin for spacing */
+    margin-top: 9px;
+}
+.acceuil .top-buttons {
+    position: fixed;
+    z-index: 99;
+    margin-left: -10px;
+    width: 100%;
+    display: flex;
+    padding-left: 45px;
+    background-color: var(--primary-color-light);
+    
+}
+.acceuil .top-buttons button {
+    border: none; /* Supprimez la bordure */
+    background: none; /* Supprimez l'arrière-plan par défaut */
+    padding: 8px 12px;
+    cursor: pointer;
+    color: var(--base-color222-foncé);
+}
+.acceuil .top-buttons button:hover {
+    color: var(--orange) !important;
+    text-decoration: underline;
+
+}
+
+.mar{
+    margin-top: 78px !important;
+    margin-left: 60px !important;
+    
+}
+ body{
+    height:100vh ;
+    background: var(--body-color);
+    transition: var(--tran-05);
+}
+body.dark{
+    --body-color :#18191A;
+    --sidebar-color:#242526;
+    --primary-color: #3A3B3C;
+    --primary-color-light:#3A3B3C;
+    --toggle-color:#fff;
+    --text-color: #ccc;
+    --post :#868686;
+    --post-hover: #777676;
+    --orange: #000;
+    --colorbleu : #ccc ;
+    --activitycolor: #000;
+/**/
+    --base-color222: #3f4144;
+--base-color222-foncé: #ffffff;
+/**/
+
+}
+
+
+
+/* ======= Sidebar =======*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background-color: var(--sidebar-color);
+    transition: var(--tran-05);
+    z-index: 100;
+}
+
+.sidebar.close{
+    width:78px;
+
+}
+/* ===== Resuable CSS =====*/
+.sidebar .text{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: var(--tran-03);
+    white-space: nowrap;
+    opacity:1;
+}
+
+.sidebar.close .text{
+   opacity: 0;
+   font-size: 0px;
+}
+
+
+.sidebar .image{
+    min-width:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar li {
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+.sidebar li .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 20px;   
+}
+.sidebar li .icon,
+.sidebar li .text{
+color: var(--text-color);
+transition:var(--tran-02);
+}
+.sidebar header{
+    position: relative;
+
+}
+.sidebar .image-text img{
+width: 40px ;
+border-radius: 6px; 
+}
+.sidebar header .image-text{
+    display: flex;
+    align-items: center;
+
+}
+  
+header .image-text .header-text{
+    display: flex;
+    flex-direction: column;
+}
+.header-text .name{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+ .sidebar header .toggle{
+    position: absolute;
+    top:50%;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height:25 px;
+    width : 25px;
+    background:var(--primary-color);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--sidebar-color);
+    font-size: 22px;
+    transition: var(--tran-03);
+
+}
+
+ body.dark .close header .toggle{
+    transform: translateY(-50%) ;
+}
+
+ body .close header .toggle{
+    transform: translateY(-50%) ;
+}
+
+ body.dark .sidebar header .toggle{
+    color: var(--text-color); 
+}
+
+ .sidebar .menu{
+    margin-top:35px;
+}
+
+ .sidebar .search-box{
+    background: var(--primary-color-light);
+    border-radius: 6px;
+    transition: var(--tran-05);
+}
+
+
+ .search-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    background: var(--primary-color-light);
+    transition: var(--tran-05);
+}
+
+.posts{
+    background-color: #b9c7f1;
+    padding: 10px;
+}
+.posts1{
+    background-color: #7689c4;
+    padding: 10px;
+}
+.posts2{
+    background-color: #607ccf;
+    padding: 10px;
+}
+ .sidebar li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: var(--tran-04);
+}
+
+.post-container {
+    display: flex;
+  }
+  
+  .column {
+    flex: 1;
+  }
+  .post-container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.posts, .posts1, .posts2 {
+    display: flex;
+    flex-direction: column-reverse; /* Fait apparaître les posts de haut en bas */
+}
+
+
+  #gifBackground {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust as needed */
+    overflow: hidden;
+    background-image: url('../images/pic2.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container1 {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background-color: var(--activitycolor); /* Adjust background color and opacity as needed */
+}
+
+
+  
+  /* Ensure the rows start at the same line */
+  .column:nth-child(n+2) {
+    margin-left: 20px; /* Adjust space between columns */
+  }
+ 
+ .sidebar li a:hover{
+    background: var(--primary-color);
+
+}
+.gifimg1{
+    height: 250px;
+    width: 300px;
+    position: relative;
+    margin-top: -200px;
+    margin-left: 600px;    
+    border-radius: 10px;
+
+  }
+
+ .sidebar li a:hover .icon ,
+ .sidebar li a:hover .text{
+    color: var(--sidebar-color);
+
+}
+
+ body.dark .sidebar li a:hover .icon ,
+ body.dark .sidebar li a:hover .text{
+    color: var(--text-color);
+
+}
+
+ .sidebar .menu-bar{
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ .menu-bar .mode{
+    position: relative;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+}
+
+ .menu-bar .mode .moon-sun{
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+
+}
+
+ .menu-bar .mode i {
+    position:absolute;
+    transition: var(--tran-03);}
+
+ .menu-bar .mode i.sun{
+    opacity: 0;
+}
+
+ body.dark .menu-bar .mode i.sun{
+    opacity: 1;
+}
+ body.dark .menu-bar .mode i.moon{
+    opacity: 0;
+}
+
+ .menu-bar .mode .toggle-switch{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+    cursor: pointer;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+    transition: var(--tran-05);
+}
+ .toggle-switch .switch{
+    position:relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background: var(--toggle-color);
+}
+
+ .switch::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius:50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background:var(--sidebar-color);
+    transition: var(--tran-03);
+}
+
+ body.dark .switch::before{
+    left:24px;
+
+}
+
+
+
+.acceuil .home{
+    position: relative;
+    
+    height: 100%;
+    left : 250px;
+    width: calc(100% - 250px);
+    background-color:var(--primary-color-light);
+    transition:var(--tran-05);
+}
+
+.acceuil .home .text{
+    font-size: 30px;
+    font-weight: 500;
+    color:var(--text-color);
+    padding: 8px 40px;
+}
+
+.acceuil .sidebar.close ~ .home{
+    left : 78px;
+    width: calc(100% - 78px);
+}
+
+
+
+/**********************************************************/
+
+
+
+/***************************************************************/
+
+.acceuil .post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajout d'un espacement entre les publications */
+    padding: 20px; /* Ajout de marge intérieure pour l'espacement global */
+}
+
+.acceuil .post {
+    flex: 0 0 calc(30% - 20px); /* Ajustement de la largeur des publications */
+    margin-bottom: 20px; /* Ajout de marges en bas pour l'espacement vertical */
+    padding: 25px;
+    border: 1px solid #ddd; /* Changement de la couleur de la bordure */
+    background-color: var(--post);
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.acceuil .post:hover {
+    background-color: var(--post-hover);
+    transform: scale(1.02); /* Légère animation au survol */
+}
+
+.acceuil .post img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Limitation de la hauteur des images */
+    object-fit: cover;
+    border-radius: 8px; /* Coins arrondis pour les images */
+    margin-bottom: 10px; /* Espacement entre l'image et le texte */
+}
+
+.acceuil .post h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.acceuil .post p {
+    font-size: 14px;
+    color: #666;
+}
+
+.acceuil .see-more {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.acceuil .post:hover .see-more {
+    display: block;
+    transition: opacity 0.3s;
+}
+
+.acceuil .see-more button {
+    background-color: var(--orange) !important; /* Couleur du bouton "Voir plus" */
+    color: var(--post);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.acceuil .see-more button:hover {
+    background-color: var(--primary-color); /* Changement de couleur au survol du bouton */
+}
+
+
+
+
+/*////////////////////////////////////////////*/
+
+
+
+.acceuil section {
+    text-align: center;
+    color: var(--primary-color);
+  }
+  
+ .acceuil  section .modal,
+ .acceuil  section .post-container{
+    text-align: left;
+  }
+ .acceuil  .container1 {
+    background-color: var(--primary-color-light);
+    
+    text-align: center;
+    padding: 20px;
+    color: var(--base-color222-foncé); /* Couleur du texte */
+    font-size: 30px; /* Ajustement de la taille de la police */
+    border-radius: 10px;
+    font-weight: 400;
+    line-height: 1.4; /* Espacement entre les lignes */
+    align-items: center;
+}
+.insp{
+    margin-left: 520px;
+    padding-bottom:30px;
+}
+
+.insp1{
+    margin-left: 200px;
+    padding-bottom:30px;
+}
+.acceuil .container1 p {
+    margin-top: 20px;
+    margin-right: 550px;
+    font-family: 'Fira Code', monospace;
+    font-weight: 700;
+color: var(--text-color);
+}
+
+
+
+
+
+/*===================== BUUTON LOAD MORE ===================*/
+.acceuil .myButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:31px;
+	border:1px solid var(--primary-color);
+	display:inline-block;
+	cursor:pointer;
+	color:var(--primary-color);
+	font-family:Times New Roman;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.acceuil .myButton:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+.acceuil .myButton:active {
+	position:relative;
+	top:1px;
+}
+
+     
+
+
+/*=====================FORM===================*/
+
+/* Add this to your CSS */
+.acceuil .form-container {
+    display: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    padding-left: 20px;
+    padding-right: 20px;
+    background:var(--post);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* added shadow */
+
+    z-index: 103; /* Higher z-index to appear above the sidebar */
+    width: 800px; /* Ajout de la largeur souhaitée */
+    /*height: 620px; /* Ajout de la hauteur souhaitée */
+}
+
+.acceuil .form-container label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.acceuil .form-container input,
+.acceuil .form-container textarea,
+.acceuil .form-container select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.acceuil .form-container button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.acceuil .form-container button:hover {
+    background-color:#384260 ;
+}
+
+
+/*
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+}
+*/
+.acceuil .modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 102
+}
+
+.acceuil .modal-content {
+    background: rgba(255, 255, 255, 0.8); /* slightly transparent to create blur effect */
+    padding: 20px;
+    border-radius: 15px; /* increased border radius */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* added shadow */
+    max-width: 1000px;
+    max-height: 1000px;
+    backdrop-filter: blur(20px); /* increased blur on the background */
+}
+.acceuil .modal-content img {
+    margin: 5px; /* Add margin between images */
+    max-width: calc(50% - 10px); /* Set max width for each image */
+    max-height: 200px; /* Set max height for each image */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+.orange{
+    color: var(--orange) !important; /* Changement de couleur du texte en rouge */
+}
+
+.custom1-h2 {
+    color: var(--activitycolor) !important; /* Changement de couleur du texte en rouge */
+    font-weight: bold; /* Texte en gras */
+    font-family: Roboto, sans-serif; /* Police différente */
+    text-decoration: underline; /* Ligne sous l'écriture */
+}
+.custom2-h2 {
+    color: var(--colorbleu) !important; /* Changement de couleur du texte en rouge */
+    font-weight: bold; /* Texte en gras */
+    font-family: Roboto, sans-serif; /* Police différente */
+    text-decoration: underline; /* Ligne sous l'écriture */
+}
+.custom3-h2 {
+    color: var(--orange) !important; /* Changement de couleur du texte en rouge */
+    font-weight: bold; /* Texte en gras */
+    font-family: Roboto, sans-serif; /* Police différente */
+    text-decoration: underline; /* Ligne sous l'écriture */
+}
+.signup-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+background-color: #0A1D56;
+color: #fff;}
+
+.acceuil .close {
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--orange); /* set the color to red */
+}
+/*  ---------------------------Project form -----------------------------  */
+
+.acceuil .Projectform-container {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+        padding: 10px;
+        background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* added shadow */
+
+    z-index: 103;  /* Higher z-index to appear above the sidebar */
+    width: 800px; /* Ajout de la largeur souhaitée */
+    max-height: 5000px;
+    margin-top: 207px;
+}
+
+.acceuil .Projectform-container label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.acceuil .Projectform-container input,
+.acceuil .Projectform-container textarea,
+.acceuil .Projectform-container select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.acceuil .Projectform-container button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.acceuil .Projectform-container button:hover {
+    background-color:#384260 ;
+}
+
+.acceuil .Projectform-container .skill-tag{
+    width: fit-content;
+
+}
+.acceuil .Projectform-container .Skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap to the next line if they exceed container width */
+  }
+  
+  .acceuil .Projectform-container .skill-tag {
+    display: inline-flex; /* Ensure each tag is displayed as a flex item */
+    align-items: center; /* Align items vertically */
+    margin-right: 8px; /* Add some margin between tags */
+    margin-bottom: 8px; /* Add some margin between lines */
+  }
+  
+  .acceuil .Projectform-container .skill-tag button {
+    margin-left: 4px; /* Add margin to the left of the button for spacing */
+  }
+  
+  
+
+/*  ---------------------------Training form -----------------------------  */
+
+.acceuil .Trainingform-container {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* added shadow */
+
+    z-index: 103;  /* Higher z-index to appear above the sidebar */
+    width: 800px; /* Ajout de la largeur souhaitée */
+   margin-top: 320px; /* Ajout de la hauteur souhaitée */
+}
+
+.acceuil .Trainingform-container label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.acceuil .Trainingform-container input,
+.acceuil .Trainingform-container textarea,
+.acceuil .Trainingform-container select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.acceuil .Trainingform-container button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.acceuil .Trainingform-container button:hover {
+    background-color:#384260 ;
+}
+/*          skills of acceuil's client   */
+
+.acceuil .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .skill-tag {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .skill-tag button {
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  
+  
+  .acceuil .seeComments{
+      border: 1px solid #808080;
+      border-radius: 7px;
+      background-color: transparent;
+  
+  }
+  
+  
+  .acceuil .Skills-options {
+      position: absolute;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 5px;
+      z-index: 1;
+  }
+  .basket-container {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    width: 680px; /* Adjust width as needed */
+    z-index: 999; /* Ensure it's above other content */
+    background-color: #ffffff;
+    color: #0A1D56;
+    border-radius: 7px;
+    border: 2px solid #0A1D56;
+}
+
+.basket-container table {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-collapse: collapse; /* Merge table borders */
+}
+
+.basket-container th,
+.basket-container td {
+    padding: 7px; /* Adjust padding as needed */
+    border-bottom: 1px solid #ddd; /* Add border between rows */
+    width: 600px;
+}
+
+.basket-container td {
+    border-right: 5px solid transparent; /* Add space between td elements */
+}
+
+.basket-container td:last-child {
+    border-right: none; /* Remove right border from last td element */
+}
+
+.basket-container tr:last-child td {
+    border-bottom: none; /* Remove bottom border from last row */
+}
+/* BasketContainer.css */
+
+.basket-container button {
+   background-color: #ffba5f;
+    /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Make it inline-block */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.basket-container button:hover {
+    background-color: #7d94d6; /* Darker green on hover */
+}
+.basket-container svg {
+    fill: #0A1D56; /* Change icon color */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-left: 5px; /* Add margin to separate icon from button */
+}
+
+
+
+
+
+
+.emailContact-container button {
+    
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Make it inline-block */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    margin-left:0px;
+}
+
+.emailContact-container button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+ .emailContact-container h4 {
+    text-align: center;
+     }
+
+
+     .emailContact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .emailContact-message {
+        text-align: center;
+      }
+      
+      .emailContact-message img {
+        width: 100px; /* Adjust size as needed */
+        height: auto;
+      }
+      
+      .emailContact-message p {
+        margin-top: 20px;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+      }
+   
+      .emailContact-message h2 {
+        color: green;
+      }
+
+.participants-container {
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    width: 600px; /* Adjust width as needed */
+    z-index: 999; /* Ensure it's above other content */
+    background-color: #ffffff;
+    color: #0A1D56;
+    border-radius: 7px;
+    border: 2px solid #0A1D56;
+}
+
+.participants-container table {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-collapse: collapse; /* Merge table borders */
+}
+
+.participants-container th,
+.participants-container td {
+    padding: 10px; /* Adjust padding as needed */
+    border-bottom: 1px solid #ddd; /* Add border between rows */
+}
+
+.participants-container td {
+    border-right: 5px solid transparent; /* Add space between td elements */
+}
+
+.participants-container td:last-child {
+    border-right: none; /* Remove right border from last td element */
+}
+
+.participants-container tr:last-child td {
+    border-bottom: none; /* Remove bottom border from last row */
+}
+
+.participants-container button {
+    background-color: #ffba5f; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Make it inline-block */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.participants-container button:hover {
+    background-color: #b7c9ff; /* Darker green on hover */
+}
+.participants-container svg {
+    fill: #0A1D56; /* Change icon color */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-left: 5px; /* Add margin to separate icon from button */
+}
+
+
+
+.projectslist-container {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    width: 600px; /* Adjust width as needed */
+    z-index: 999; /* Ensure it's above other content */
+    background-color: #ffffff;
+    color: #0A1D56;
+    border-radius: 7px;
+    border: 2px solid #0A1D56;
+}
+
+.projectslist-container table {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-collapse: collapse; /* Merge table borders */
+}
+
+.projectslist-container th,
+.projectslist-container td {
+    padding: 10px; /* Adjust padding as needed */
+    border-bottom: 1px solid #ddd; /* Add border between rows */
+}
+
+.projectslist-container td {
+    border-right: 5px solid transparent; /* Add space between td elements */
+}
+
+.projectslist-container td:last-child {
+    border-right: none; /* Remove right border from last td element */
+}
+
+.projectslist-container tr:last-child td {
+    border-bottom: none; /* Remove bottom border from last row */
+}
+/* BasketContainer.css */
+
+.projectslist-container button {
+    background-color: #0A1D56; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Make it inline-block */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    margin-left: 4px;
+}
+
+.projectslist-container button:hover {
+    background-color: #b7c9ff; /* Darker green on hover */
+}
+.projectslist-container svg {
+    font-size: '24px';
+
+    fill: var(--orange); /* Change icon color */
+    cursor: pointer; /* Change cursor to pointer */
+}
+.projectslist-container1 svg {
+    font-size: '24px';
+
+    fill: var(--orange); /* Change icon color */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-left: -560px !important; /* Add margin to separate icon from button */
+}
+
+.projectslist-container .state{
+    background-color: #fcfcfc; /* Green background */
+    color: rgb(0, 0, 0); /* White text */
+    padding: 3px 6px; /* Padding */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Make it inline-block */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    margin-left: 4px;
+    font-size: 17px;
+  
+}
+
+.projectslist-container .state:hover {
+    background-color: #ccc; /* Darker green on hover */
+}
+
+
+.myprojects-container {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    width: 800px; /* Adjust width as needed */
+    z-index: 999; /* Ensure it's above other content */
+    background-color: #ffffff;
+    color: #0A1D56;
+    border-radius: 7px;
+    border: 2px solid #0A1D56;
+}
+
+.myprojects-container table {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+width: 700px;
+    border-collapse: collapse; /* Merge table borders */
+}
+
+
+.myprojects-container h1 {
+    margin-top: -28px;
+}
+.myprojects-container th,
+.myprojects-container td {
+    padding: 10px; /* Adjust padding as needed */
+    border-bottom: 1px solid #ddd; /* Add border between rows */
+}
+
+.myprojects-container td {
+    border-right: 5px solid transparent; /* Add space between td elements */
+}
+
+.myprojects-container td:last-child {
+    border-right: none; /* Remove right border from last td element */
+}
+
+.myprojects-container tr:last-child td {
+    border-bottom: none; /* Remove bottom border from last row */
+}
+
+.myprojects-container button {
+    background-color: #ffba5f; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Make it inline-block */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.myprojects-container button:hover {
+    background-color: #b7c9ff; /* Darker green on hover */
+}
+
+
+
+
+.myprojects-form {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.myprojects-form input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.myprojects-form label {
+    font-weight: bold;
+    width: 170px;
+    margin-right: 10px;
+    
+}
+
+.myprojects-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.myprojects-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.myprojects-form .container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.blur-background {
+    filter: blur(2px); /* Adjust the blur intensity as needed */
+    pointer-events: none; /* Allow pointer events to pass through the blurred elements */
+}
+
+
+.show-list-container {
+    position: absolute;
+    top: 0px; /* Adjust as needed */
+    left: 600px; /* Adjust based on the width of participants-container */
+    width: 500px; /* Adjust width as needed */
+    z-index: 999; /* Ensure it's above other content */
+    background-color: #ffffff;
+    color: #0A1D56;
+    border-radius: 7px;
+    border: 2px solid #0A1D56;
+}
+
+.show-list-container button {
+    background-color: #ffba5f; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Make it inline-block */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.show-list-container button:hover {
+    background-color: #b7c9ff; /* Darker green on hover */
+}
+
+.show-list-container ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+.show-list-container ul li {
+    padding: 10px; /* Adjust padding as needed */
+    border-bottom: 1px solid #ddd; /* Add border between items */
+}
+
+.show-list-container ul li:last-child {
+    border-bottom: none; /* Remove border from last item */
+}

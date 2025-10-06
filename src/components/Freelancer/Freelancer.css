@@ -1,0 +1,65 @@
+.aboutfreelancer :root {
+    --base-color: #f19171;
+    --base-color-foncé: #6986dd;
+    --base-color-light: #f1e6e3;
+}
+
+.aboutfreelancer .section1 #download{
+    color: #fff;
+    /* Add any additional styles you want for these buttons */
+}
+
+.aboutfreelancer .section1 #img {
+    margin-top: 80px;
+}
+
+.aboutfreelancer .section1 #domain {
+    margin-top: 180px;
+}
+
+.aboutfreelancer .section1 #download {
+    background-color: #6986dd;
+}
+
+.aboutfreelancer .section2 body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.aboutfreelancer .section2 h1 {
+    color: #333; /* Couleur du texte des titres h1 */
+}
+
+.aboutfreelancer .section2 .card {
+    background-color: #E2BFB3; /* Couleur de fond des boîtes */
+    border: 1px solid #ddd; /* Bordure des boîtes */
+    border-radius: 8px; /* Coins arrondis des boîtes */
+    padding:5px; /* Espace intérieur des boîtes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre des boîtes */
+    height: 80px;
+}
+
+.aboutfreelancer .section2 .card-title {
+    color:#0A1D56; /* Couleur du texte du titre des boîtes */
+}
+
+
+.aboutfreelancer .section2 .row{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+
+
+.aboutfreelancer .section1 .row{
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 150px;
+}

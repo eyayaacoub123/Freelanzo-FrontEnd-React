@@ -1,0 +1,140 @@
+/*.commentsection {
+    margin: 0;
+    padding: 0;
+}
+
+.commentsection body {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+
+}
+*/
+.commentsection .container {
+    background: #fff;
+    padding: 20px;
+    font-family: monospace;
+    width: 400px;
+    box-shadow: 0 0 5px #000;
+    border-radius: 7px;
+}
+
+.commentsection .head {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.commentsection .text {
+    margin: 10px 0;
+    font-family: sans-serif;
+    font-size: 0.9em;
+}
+
+.commentsection .commentbox {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.commentsection .commentbox > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* float: left; */
+    margin-right: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.commentsection .content {
+    width: 100%;
+}
+
+.commentsection .user {
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    color: #808080;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.commentsection .commentinput > input {
+    border: none;
+    padding: 10px;
+    padding-left: 0;
+    outline: none;
+    border-bottom: 2px solid blue;
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+.commentsection .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #808080;
+}
+
+.commentsection .buttons > button {
+    padding: 5px 10px;
+    background: lightgrey;
+    color: #808080;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.commentsection .buttons > button.abled {
+    background: blue;
+    color: #fff;
+}
+
+.commentsection .parents {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.commentsection .parents h1 {
+    font-size: 0.9em;
+}
+
+.commentsection .parents p {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.commentsection .parents > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.commentsection .engagements {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.commentsection .engagements img {
+    width: 20px;
+}
+
+.commentsection .engagements img:nth-child(1) {
+    margin-right: 10px;
+    width: 25px;
+}
+
+.commentsection .date {
+    color: #808080;
+    font-size: 0.8em;
+}

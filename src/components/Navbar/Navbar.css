@@ -1,0 +1,56 @@
+
+:root {
+    --base-color: #f19171;
+    --base-color-foncé: #5d7ee3;
+    --base-color-light: #f1e6e3;
+  }
+  .custom-navbar {
+      background-color: #6986dd; /* Couleur de fond beige pour le navbar */
+    }
+    
+    .navbar-nav .nav-link {
+      color: var(--base-color);; 
+      position: relative; /* Position relative pour les éléments enfants absolus */
+    }
+    
+    .navbar-nav .nav-link::before {
+      content: ""; /* Contenu vide pour créer l'élément avant */
+      position: absolute; /* Position absolue pour le positionnement par rapport au parent */
+      bottom: -2px; /* En bas du parent, légèrement au-dessus de la ligne de texte */
+      left: 50%; /* Au centre du parent */
+      width: 0; /* Largeur initiale à zéro */
+      height: 2px; /* Hauteur de la ligne */
+      background-color:#fff; /* Couleur de la ligne blanche */
+      transition: width 0.3s, left 0.3s; /* Transitions pour une animation fluide */
+    }
+    
+    .navbar-nav .nav-link:hover::before {
+      width: 100%; /* Augmenter la largeur au survol */
+      left: 0; /* Ajuster le positionnement à gauche */
+    }
+    
+   
+.navbar .special-button .nav-link {
+  color: #fff; /* Couleur du texte blanc */
+}
+
+.navbar .special-button .nav-link:hover {
+  background-color: var(--base-color); /* Couleur de fond vert au survol */
+  color: #fff; /* Couleur du texte blanc au survol */
+}
+
+.navbar #home,
+.navbar #about,
+.navbar #contact {
+  color: #fff;
+  /* Add any additional styles you want for these buttons */
+}
+
+.navbar .color {
+  color: var(--base-color);
+}
+
+
+.navbar .btn-outline-light {
+  --bs-btn-hover-color: #0a1d56;
+}

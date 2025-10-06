@@ -1,0 +1,171 @@
+/* Contact.css */
+
+.Contact {
+  --base-color: #86a1f0;
+  --base-color-foncé: #0A1D56;
+  --base-color-light: #f1e6e3;
+}
+
+.Contact .special-button .nav-link {
+  color: #fff; /* Couleur du texte blanc */
+}
+
+.Contact .special-button .nav-link:hover {
+  background-color: #000000; /* Couleur de fond vert au survol */
+  color: #fff; /* Couleur du texte blanc au survol */
+}
+
+.Contact .spacer {
+  margin-top: 550px; /* Ajustez la valeur en fonction de l'espace que vous souhaitez */
+}
+
+.Contact .section-title {
+  font-size: 2.5em;
+  color: var(--base-color-foncé); /* Couleur du texte vert */
+  font-family: 'Fira Code', monospace;
+    font-weight: 700;
+
+}
+
+.Contact body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Contact .container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.Contact section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.Contact .contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.Contact .contact-form {
+  flex: 1;
+  text-align: left;
+}
+
+.Contact .contact-form h2 {
+  color: var(--base-color-foncé);
+}
+
+.Contact .contact-form p {
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.Contact .contact-form form {
+  width: 100%;
+}
+
+.Contact .contact-form label {
+  display: block;
+  color: #000000;
+  margin-bottom: -20px;
+}
+
+.Contact .contact-form input[type="text"],
+.Contact .contact-form input[type="email"],
+.Contact .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom:15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.Contact .contact-form textarea {
+  height: 100px;
+}
+
+.Contact .contact-form input[type="submit"] {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: var(--base-color-foncé);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Contact .contact-form input[type="submit"]:hover {
+  background-color: var(--base-color-foncé);
+}
+
+.Contact .contact-info {
+  flex: 1;
+  background-color: #fff;
+  border: #000000;
+}
+
+.Contact .contact-info h3 {
+  color: var(--base-color-foncé);
+  margin-bottom: 10px;
+  font-family: 'Fira Code', monospace;
+    font-weight: 700;
+
+}
+
+.Contact .contact-info p {
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.Contact form {
+  background-color: var(--base-color); /* Couleur de fond blanche */
+  padding: 20px;
+  border-radius: 10px; /* Bordure arrondie */
+  box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.1); /* Shadow */
+
+}
+
+.Contact .contact-info {
+  margin-left: 60px;
+  margin-top: 120px;
+  background-color: var(--base-color); /* Couleur de fond blanche */
+  padding: 80px;
+  border-radius: 7px; /* Bordure arrondie */
+  box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+
+.Contact #bg-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.Contact #last_section,
+.Contact #home,
+.Contact #about,
+.Contact #contact {
+  color: #fff;
+  /* Add any additional styles you want for these buttons */
+}
+
+.Contact #copy {
+  font-weight: bold;
+  color: var(--base-color-foncé);
+}

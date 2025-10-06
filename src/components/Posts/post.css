@@ -1,0 +1,16 @@
+.post-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .action-icons {
+    display: flex;
+    gap: 10px; /* Adjust the space between icons as needed */
+  }
+  
+  .edit-icon,
+  .delete-icon {
+    cursor: pointer;
+  }
+  

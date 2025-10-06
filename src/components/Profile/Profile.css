@@ -1,0 +1,163 @@
+.Profile.Profile {
+    margin-top: 20px;
+    color: #1a202c;
+    text-align: left;
+    background-color: #e2e8f0;
+}
+
+.main-body.Profile {
+    padding: 15px;
+}
+
+.b{
+background-color: #e0e8ff;
+}
+.card.Profile {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+.card-body.Profile {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.gutters-sm.Profile {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm.Profile > .col.Profile,
+.gutters-sm.Profile > [class*="col-"].Profile {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.mb-3.Profile,
+.my-3.Profile {
+    margin-bottom: 1rem !important;
+}
+
+.bg-gray-300.Profile {
+    background-color: #e2e8f0;
+}
+
+.h-100.Profile {
+    height: 100% !important;
+}
+
+.shadow-none.Profile {
+    box-shadow: none !important;
+}
+.Profile.button {
+    font-size: 15px;
+    font-family: Arial;
+    width: 100px;
+    height: 40px;
+    border-width: 0px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 15px;
+    text-shadow: inset 0px 1px 0px #ffba5f;
+    background: #ffba5f;;
+    margin-bottom: 10px;
+    margin-right: 5px;
+text-align: center;
+}
+
+.Profile.button:hover {
+    background: #86a1f0;
+}
+.Profile.button1{
+    
+    margin-left: 260px;
+}
+
+.Profile.button2{
+    
+    margin-left: 290px;
+}
+.trainingsList-container {
+    position: absolute;
+    top: 110px;
+    left: 150px;
+    width: 1350px; 
+    height: fit-content; /* Adjust width as needed */
+    margin-bottom: 20px;
+    z-index: 999; /* It's above other content */
+    background-color: #ffffff;
+    color: #0A1D56;
+    border-radius: 7px;
+    border: 2px solid #0A1D56;
+    transition: opacity 0.3s ease, transform 0.3s linear;  /* Add transition properties */
+    opacity: 0; /* Initially hide the container */
+    transform: translateY(-200px); /* Move the container up initially */
+}
+
+.trainingsList-container.open {
+    opacity: 1; /* Show the container */
+    transform: translateY(0); /* Move the container to its original position */
+}
+
+.trainingsList-container table {
+    margin: 10px;
+    border-collapse: collapse;
+}
+
+.trainingsList-container th, .trainingsList-container td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Styles for the buttons */
+.trainingsList-container button {
+    background-color: #ffba5f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.trainingsList-container button:hover {
+    opacity: 0.8;
+}
+
+.trainingsList-container button.unsatisfied {
+    background-color: #f44336;
+}
+
+.trainingsList-container button.unsatisfied:hover {
+    background-color: #d32f2f;
+}
+
+.blur-background {
+    filter: blur(2px); /* Adjust the blur intensity as needed */
+    pointer-events: none; /* Allow pointer events to pass through the blurred elements */
+}
+
+.skill1-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skill1-box {
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 1px;
+    border: 2px solid #3d81e7;
+    border-radius: 5px;
+  }
+  

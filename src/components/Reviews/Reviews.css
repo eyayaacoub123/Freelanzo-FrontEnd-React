@@ -1,0 +1,88 @@
+/* reviews.css */
+.reviews.container {
+    margin: 20px;
+    padding: 20px;
+    max-width:900px ;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    margin-left: 315px;
+
+}
+
+.review1 {
+    padding: 20px!important ;
+    margin-bottom: 20px !important;
+    border: 1px solid #ccc; /* Add border to create box */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add shadow for depth */
+    background-color: #f6f5ff;
+}
+
+.review:last-child {
+    border-bottom: none; /* no border for the last review */
+}
+
+.review h2 {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.review p {
+    color: #666;
+    margin-bottom: 20px; /* Added more space below paragraphs */
+    line-height: 1.6; /* Improved line spacing for readability */
+}
+
+
+.addreview button {
+    background-color: #0a156d!important; /* Couleur du bouton "Voir plus" */
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 1100px;
+}
+
+.addreview button:hover {
+    background-color: var(--primary-color); /* Changement de couleur au survol du bouton */
+}
+
+
+.review-form {
+    margin: 20px;
+  }
+  
+ .review-form .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+ .review-form .form-label {
+    margin-bottom: 5px;
+  }
+  
+ .review-form .form-input,
+ .review-form .form-textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .review-form .form-button {
+    padding: 10px 20px;
+    background-color: #0a156d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .review-form .form-button:hover {
+    background-color: #071474;
+  }
+  
